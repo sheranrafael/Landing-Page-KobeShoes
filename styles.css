@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=Space+Grotesk:wght@500&display=swap');
+
+:root {
+    --blue: #7CA2F4;
+    --blue-light: #F3F7FF;
+    --black: #121214;
+    --white: #FFF;
+
+    --font-archivo: 'Archivo', sans-serif;
+    --font-space-grotesk: 'Space Grotesk', sans-serif;
+
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-archivo);
+    background: var(--white);
+    color: var(--black);
+    font-size: 1.6rem;
+}
+
+h2 {
+    font-size: 3.2rem;
+    font-weight: 600;
+    line-height: 6.278rem;
+}
+
+h3 {
+    font-size: 2.4rem;
+    font-weight: 600;
+}
+
+h4 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 130%;
+}
+
+.container {
+    max-width: 124rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+
+/* -- HEADER -- */
+header {
+    width: 100%;
+    padding: 2rem 0;
+}
+
+.header-brand {
+    background-color: var(--white);
+}
+
+.header-brand h3 {
+    text-align: center;
+}
+
+
+/* -- HERO -- */
+.hero {
+    width: 100%;
+    height: 55rem; 
+    display: flex;
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('./img/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+.hero .container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.text-hero {
+    width: 46rem;
+    color: var(--white);
+    font-family: var(--font-archivo);
+}
+
+.text-hero > div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 5rem;
+}
+
+.text-hero p {
+    font-size: 1.8rem;
+    line-height: 3.531rem;
+}
+
+
+/* -- MAIN -- */
+.main-title {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 6rem;
+}
+
+.main-title > div {
+    max-width: 59.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-title p {
+    margin-top: 2rem;
+    font-size: 2.2rem;
+    line-height: 140%; 
+    text-align: center;
+}
+
+.main-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 38.5rem);
+    justify-content: space-between;
+    margin-top: 6rem;
+}
+
+.card {
+    display: flex;   
+    flex-direction: column;
+    margin-bottom: 4rem;
+    width: 38.5rem;
+    cursor: pointer;
+}
+
+.card-image-container {
+    width: 100%;
+    height: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--blue-light);
+}   
+
+.card img {
+    width: 25rem;
+    transition: all .4s ease;
+}
+
+.card:hover img {
+    transform: scale(1.1);
+}
+
+.card-info {
+    margin-top: 2.5rem;
+}
+
+.card-category {
+    color: var(--blue);
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin: 1.2rem 0 2.4rem 0;
+}
+
+.card-price {
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: var(--font-space-grotesk);
+}
+
+
+/* -- MEDIA QUERIES -- */
+@media (max-width: 1240px) {   
+    .container {
+        max-width: 114rem;
+    }
+    
+    .main-cards {
+        justify-content: space-around;
+    }
+} 
+
+@media (max-width: 976px) {     
+    h2 {
+        font-size: 2.4rem;
+        line-height: 4.7rem;
+    }
+    
+    h3 {
+        font-size: 1.8rem;
+    }
+    
+    h4 {
+        font-size: 1.7rem;
+    }
+    
+    .container {
+        max-width: 92.7rem;
+    }
+    
+    .main-cards {
+        justify-content: space-around;
+        padding: 0 0.8rem;
+    }
+} 
+
+@media (max-width: 620px) {    
+    .hero {
+        background-position: top 45% right 65%;
+    }
+    
+    .container {
+        max-width: 58.9rem;
+    }
+
+    .main-title {
+        padding: 0 1rem;
+    }
+
+    .main-title p {
+        font-size: 1.6rem;
+        line-height: 2.88rem;
+    }
+    
+    .main-cards {
+        grid-template-columns: repeat(auto-fill, 37.4rem);
+        justify-content: center;
+        padding: 0 0;
+    }
+
+    .card {
+        width: 37.4rem;
+        height: 30.2rem;
+    }
+
+    .card-price {
+        font-size: 1.7rem;
+    }
+} 
+
+/* Small devices*/
+@media (max-width: 414px) {   
+    .text-hero h2,
+    .text-hero p {
+        padding: 0 1rem;
+    }
+    
+    .container {
+        max-width: auto;
+    }
+    
+    .main-cards {
+        grid-template-columns: repeat(auto-fill, 28rem);
+    }
+
+    .card {
+        width: 28rem;
+    }
+
+    .animation {
+        font-size: 1.5rem;
+    }
+} 
+
+@media (max-width: 360px) {
+    .main-title h2,
+    .main-title p {
+        padding: 0 0.8rem;
+    }
+}
+
