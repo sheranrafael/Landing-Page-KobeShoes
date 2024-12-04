@@ -1,4 +1,4 @@
-## Kobe Shoes 
+# Kobe Shoes 
 Este projeto tem como objetivo recriar a interface da loja online de tênis da marca Kobe Bryant. -
 This project aims to recreate the online store interface for the Kobe Bryant sneaker brand.
 
