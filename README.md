@@ -10,19 +10,10 @@ This project aims to recreate the online store interface for the Kobe Bryant sne
 
 ## Feito apenas para estudos - Made just for studies.
 
-Screenshots of the App:
+Screenshots:
 
 ![Captura de tela 2024-12-03 213820](https://github.com/user-attachments/assets/cb4326af-1849-4294-865a-77d0ea14eb10)
 
 
 
-![alt text](https://github.com/peeyush14goyal/AmazonPrime-ReactJS-Clone/blob/master/screenshots/2.PNG)
-
-
-![alt text](https://github.com/peeyush14goyal/AmazonPrime-ReactJS-Clone/blob/master/screenshots/3.PNG)
-
-
-![alt text](https://github.com/peeyush14goyal/AmazonPrime-ReactJS-Clone/blob/master/screenshots/4.PNG)
-
-
-![alt text](https://github.com/peeyush14goyal/AmazonPrime-ReactJS-Clone/blob/master/screenshots/5.PNG)
+![Captura de tela 2024-12-03 213855](https://github.com/user-attachments/assets/dfdd5bec-395f-4709-8401-7a2282235ffd)
